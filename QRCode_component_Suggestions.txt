@@ -1,0 +1,44 @@
+﻿1)  Hello Tauseef Ansari
+
+First, let's implement some semantic HTML markup to resolve some of the accessibility issues:
+
+Replace this div.main with main element.
+Replace the p element which is the first child of div.desc with a h1 element.
+Second, to use the provided font, you can use link tag in your index.html or @import statement in your styles.css. I'll demonstrate the latter: @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');, then add this to your styles: body {font-family: 'Outfit', sans-serif;}.
+
+Finally, adjust some of the styles to make them more efficient:
+
+Remove all styles in div.main and div.GlobalContainer.
+Define them on body tag instead:
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   min-height: 100vh;
+   background-color: hsl(212, 45%, 89%);
+}
+Great effort on submitting your first solution. Wish you the best in your journey in front-end web development 👌
+
+
+
+
+
+
+2) 👾Hello Tauseef, Congratulations on completing this challenge!
+
+You’ve done really good work here putting everything together, I’ve some suggestions you can consider applying to your code to improve the html markup/semantic:
+
+You've done the design for the wrong image, when you download the starter files the folder comes with 3 files (preview card, desktop and mobile) you've created the solution based on the preview and you should consider only the mobile + desktop images.
+
+Remove the background-color from the container and add it to the body to make sure this color background will display it full screen.
+
+The html structure is fine and works, but you can reduce at least 20% of your code cleaning the unnecessary elements, you start cleaning it by removing some unnecessary <div>. For this solution you wrap everything inside a single block of content using <div> or <main> (better option for accessibility) and put inside the whole content <img> / <h1> and <p>.
+
+<body>
+<main>
+<img src="./images/image-qr-code.png" alt="Qr Code Image" >
+ <h1>Improve your front-end skills by building projects</h1>
+<p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+</main>
+</body>
